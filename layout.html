@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+        }
+        header{
+             background: #222;
+      color: #fff;
+      padding: 30px;
+        }
+        nav{
+            background-color: #fff;
+            padding: 30px;
+            align-items: center;
+            size: 50px;
+        }
+        nav a{
+            text-decoration: none;
+            color: #222;
+            margin: auto;
+            text-size-adjust: 40px;
+            align-items: center;
+            font-weight: bold ;
+        }
+        .post{flex: 1;
+      display: flex;
+      padding: 1rem;
+      gap: 1rem;
+    }
+    section{
+        flex: 3;
+      background: #f4f4f4;
+      padding: 1rem
+    }
+    aside{
+        flex: 1;
+      background: #e0e0e0;
+      padding: 1rem;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header section</h1>
+    </header>
+    <nav>
+        <a href="#"> Navigation</a>
+    </nav>
+    <div class="post">
+        <section>
+            <h2>Index</h2>
+        </section>
+        <aside>
+            <h3>Conical section </h3>
+        </aside>
+    </div>
+    <footer>
+        <h4>Footer section </h4>
+    </footer>
+    
+</body>
+</html>

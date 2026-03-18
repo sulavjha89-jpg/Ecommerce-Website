@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar6</title>
+    <style>
+        body{
+            background-color: rgb(212, 247, 247);
+        }
+        .main-flex{
+           display: flex;
+           box-shadow: 2px 2px 2px 0px #00000018;
+            padding: 10px 20px;
+            justify-content: space-between;
+            align-items: center;
+            background: #d1caca;
+            border-radius: 10px;}
+         .left-flex{
+            display: flex;
+            align-items: center;
+            gap: 40px;}
+            .menu{
+            width: 40px;
+            display: flex;
+            background-color: rgb(107, 107, 115);
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            border-radius: 100%;
+             }
+             .input-wrapper{
+            width: 5cqb;
+            border-radius: 20px;
+            /* border: 1px solid red; */
+            width: 300px;
+            gap: 5px;
+            padding-right: 10px;
+            align-items: center;
+            border: 1px solid rgb(146, 105, 105);
+            display: flex;
+        }
+        input{
+            width: 100%;
+            background: #fff;
+            padding: 10px 10px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-right: 1px solid black;
+            outline: none;
+            border: none;
+            }
+            input::placeholder{
+            font-size: 15px;
+        }
+        .right-flex{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .avatar img{
+             height: 30px;
+            width: 30px;
+            border-radius: 100%;
+            background-color: aqua;
+        }
+        .syco{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            height: auto;
+            width: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main-flex">
+        <!--left-side-->
+        <div class="left-flex">
+            <div class="menu">
+                <i data-lucide="text-align-justify"></i>  
+            </div>
+            <div class="logo">
+                <img class="gb_0c" src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png" srcset="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png 1x, https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_2x_r5.png 2x " alt="" aria-hidden="true" role="presentation" style="width:109px;height:40px">
+            </div>
+        </div>
+        <!--centre-->
+        <div class="input-wrapper">
+                <input placeholder="Search">
+                <div class="come">
+                <i data-lucide="search"></i>
+                </div>
+                <div class="more">
+                <i data-lucide="panel-top-open"></i>  
+                </div>
+        </div>
+        <!--right-flex-->
+        <div class="syco">
+            <i data-lucide="panel-top-open"></i>
+            <i data-lucide="panel-top-open"></i>
+            <i data-lucide="gem"></i>  
+            <i data-lucide="square-menu"></i>  
+            </div>
+            <div class="avatar">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1zwhySGCEBxRRFYIcQgvOLOpRGqrT3d7Qng&s">
+             </div>
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

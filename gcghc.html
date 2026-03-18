@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hero Section</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <div class="w-8 h-8 bg-purple-600 rounded-full"></div>
+        <span class="font-bold text-lg">Brand</span>
+      </div>
+
+      <!-- Menu -->
+      <ul class="hidden md:flex space-x-8 text-gray-600 font-medium">
+        <li class="hover:text-purple-600 cursor-pointer">Solutions</li>
+        <li class="hover:text-purple-600 cursor-pointer">Pricing</li>
+        <li class="hover:text-purple-600 cursor-pointer">Partners</li>
+        <li class="hover:text-purple-600 cursor-pointer">Company</li>
+      </ul>
+
+      <!-- Actions -->
+      <div class="flex items-center space-x-4">
+        <a href="#" class="text-gray-600 hover:text-purple-600">Sign in</a>
+        <a href="#" class="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700">
+          Sign up
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="max-w-7xl mx-auto px-6 mt-10">
+    <div class="relative rounded-2xl overflow-hidden shadow-lg">
+
+      <!-- Background Image -->
+      <img 
+        src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+        class="w-full h-[420px] object-cover"
+      />
+
+      <!-- Purple Overlay -->
+      <div class="absolute inset-0 bg-purple-900/70"></div>
+
+      <!-- Content -->
+      <div class="absolute inset-0 flex items-center">
+        <div class="max-w-2xl px-10 text-white">
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+            Take control of your <br />
+            <span class="text-purple-200">customer support</span>
+          </h1>
+
+          <p class="mt-4 text-gray-200">
+            Anim aute id magna aliqua ad ad non deserunt sunt.
+            Qui irure qui lorem cupidatat commodo.
+          </p>
+
+          <!-- Buttons -->
+          <div class="mt-6 flex space-x-4">
+            <button class="bg-white text-purple-700 px-6 py-3 rounded-md font-semibold hover:bg-gray-100">
+              Get started
+            </button>
+            <button class="bg-purple-700 px-6 py-3 rounded-md font-semibold hover:bg-purple-800">
+              Live demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trusted Section -->
+  <section class="max-w-7xl mx-auto px-6 mt-16 text-center">
+    <p class="text-sm text-gray-500 uppercase tracking-wide">
+      Trusted by over 5 very average small businesses
+    </p>
+
+    <div class="mt-6 flex flex-wrap justify-center gap-10 text-gray-400 font-semibold">
+      <span>Tuple</span>
+      <span>Mirage</span>
+      <span>StaticKit</span>
+      <span>Transistor</span>
+      <span>Workcation</span>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar 4</title>
+    <style>
+        *{
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        .main-flex{  display: flex;
+            padding: 10px 20px;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(228, 239, 239);
+        }
+        .left-flex{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+        }
+        .icon{
+             width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            border-radius: 100%;
+            background: #f2f1f1;
+        }
+        .input-wrapper{
+            width: 100%;
+            border-radius: 20px;
+            /* border: 1px solid red; */
+            width: 500px;
+            gap: 10px;
+            padding-right: 10px;
+            align-items: center;
+            border: 1px solid black;
+            display: flex;
+        }
+        input{
+            width: 100%;
+            /* margin-left: 10px; */
+            border: none;
+            background: #fff;
+            /* background: transparent; */
+            padding: 10px 10px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            /* border-radius: 20px; */
+            border-right: 1px solid black;
+            outline: none;
+
+        }
+        input::placeholder{
+            font-size: 15px;
+            /* color: red; */
+        }
+        .moment{
+            display: flex;
+            align-items:center ;
+
+             /* color: blue; */
+            font-size: 20px;
+            gap: 30px;
+         }
+         .right-flex{
+             display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .avatar img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 100%;
+            position: relative;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="main-flex">
+        <!--left-side-->
+        <div class="left-flex">
+            <div class="icon">
+                <i data-lucide="aperture"></i>
+            </div>
+            <div class="note">
+               <a href="#">Clever</a> 
+            </div>
+            <div class="input-wrapper">
+                <input placeholder="Search">
+                <i data-lucide="search"></i> 
+                 
+            </div>
+        </div>
+        <!--centre-->
+        <div class="moment">
+                <a href="#">Home</a>
+                <a href="#">Product</a>
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>  
+        </div>
+        <!--right-side-->
+        <div class="right-flex">
+            <div class="dicon">
+                <i data-lucide="message-circle"></i>
+                <i data-lucide="bell-minus"></i>  
+
+            </div>
+            <div class="avatar">
+                <img src="https://img.freepik.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.jpg?semt=ais_hybrid&w=740&q=80">
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    
+</body>
+</html>

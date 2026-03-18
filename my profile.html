@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my profile</title>
+    <style>
+        .nabvar{
+            background-color: rgb(178, 178, 218);
+        }
+        
+        .navdep{
+            display: flex;
+            justify-content: right;
+            gap: 20px;
+            margin-right: 140px;
+            margin-top: 10px;
+            font-size: 20px;
+            padding: 5px;
+            
+        }
+        a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+       
+        .imtro{
+            display: flex;
+            gap: none;
+            flex-direction: column;
+             margin-left: 400px;
+             margin-top: 40px;
+             font-size: 40px;
+             font-style: initial;
+        }
+        .about{
+            margin-left: 400px;
+        }
+       
+        p{
+            font-size: 25px;
+        }
+        .jp{
+            height: 250px;
+            width: 250px;
+            display: flex;
+            margin-top: 30px;
+            border-radius: 100%;
+            overflow: hidden;
+            margin-left:425px;
+            margin-bottom: 30px;
+
+            
+          
+        }
+         .duction{
+            display: flex;
+            flex-direction: row;
+            /* gap: 40vh; */
+            background-color: rgb(222, 217, 211);
+         } 
+         .last-flex{
+            display: flex;
+            justify-content: center;
+            /* gap: 20vh; */
+            background-color: rgb(214, 239, 239);
+         }
+         .form{
+            background-color: #a2a2cd;
+            display: flex;
+            height: 300px;
+            width: 450px;
+            border-radius: 7px;
+            margin-top: 10px;
+            flex-direction: column;
+                margin-left: 28vh;
+                /* padding: 10px;  */
+         }
+         .iconColor {
+            color: white;
+            background-color: blue;
+            border-radius: 20%;
+            font-size: 50px;
+            height: 40px;
+            width: 40px;
+            align-items: center;
+            justify-content: center;
+         }
+         /* .iconColor :hover{
+            cursor: pointer;
+            color: black; */
+         /* } */
+          input{     
+          border-bottom: 2px solid #696969;
+         margin-left: 15px;
+         margin-top: 20px;
+         height: 35px;
+         border-radius: 8px;
+         width: 400px;
+        padding: 10px;}
+        .sit{
+        background-color: blue;
+        width: 200px;
+        height: 40px;
+        margin-top: 20px;
+        margin-left: 120px;
+        border-radius: 10px;
+    }
+         .contact{
+            display: flex;
+            margin-left: 120px;
+            align-items: center;
+            flex-direction: column;
+            width: 400px;
+            gap: 20px;
+         } 
+         .son{
+            
+            font-size: 30px;
+            align-items: center;
+            margin-top: 10vh;
+         }
+         p{
+            font-size: 15px;
+            /* margin-left: 40px; */
+            
+         }
+         .aro{
+            margin-left: 42px;
+         }
+         .icon{
+            font-size: 100px;      
+            gap: 20px;
+            display: flex;       
+         }  
+         .icon :hover{
+            color: black;
+            cursor: pointer;
+         }
+         a{
+            font-size: 30px;
+         }   
+        .navdep :hover{
+            color: rgb(206, 218, 218);
+            background-color: #4f4f7d;
+        }
+    </style>
+</head>
+<body>
+    <div class="nabvar">
+    <div class="navdep">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Project</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="imtro">
+    Darsh Jha<br> 
+    Web Developer/Student
+    </div>
+    </div>
+    <div class="duction">
+      <div class="about">
+        <h1>About me</h1>
+        <P>Hi,Darsh Jha.I'm a develope creating<br>
+        beautiful,attractive and functional website.<br>
+        I enjoy coading,learning new technologies and <br>
+        bulding projects by using....<br>1.HTML<br>2.CSS</P>
+        </div>
+   <div class="jp">
+    <img src="./what.jpeg"/>
+   </div>
+    </div>
+    <div class="last-flex">
+        <div class="contact">
+            <div class="son">
+            <i data-lucide="mail"></i>
+            <a href="#">Contact Me</a>
+            </div>
+            <div class="aro">
+            2025 Darsh Jha.All rights reserved.
+            </div>
+                       <div class="icon">
+                <i class="iconColor" data-lucide="facebook"></i>  
+                <i class="iconColor" data-lucide="instagram"></i> 
+                <i class="iconColor" data-lucide="linkedin"></i> 
+            </div>
+        </div>
+        <div class="form">
+            <div class="input-wrapper">
+            <input placeholder="Name">
+
+        </div>
+        <div class="input-wrapper">
+            <input placeholder="Email">
+        </div>
+        <div class="input-wrapper">
+            <input placeholder="Message">
+        </div>
+         <div class="input-wrapper">
+                <input class="sit" type="button" value="Send message"s>
+             </div>
+        
+       
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

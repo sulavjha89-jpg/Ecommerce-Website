@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop now</title>
+    <style>
+        :root{
+    --soft-bg: #f8f4f4;
+    --card-bg: #ffffff;
+}
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+           background-image: url(cot.jpg);
+           background-repeat: no-repeat;
+          
+           background-size: cover;
+            
+          
+          
+        }
+        .navbar{
+            display: flex;
+            /* gap: 40vh; */
+            
+    justify-content: space-between;
+    align-items: center;
+
+        }
+        h1{ 
+            margin-left: 150px;
+            margin-top: 5px;
+            font-size: 50px;
+        }
+        a{
+            text-decoration: none;
+            font-size: 30px;
+            color: black;
+            font-weight: 500;
+            
+        }
+        .right{
+            display: flex;
+            gap: 25px;
+            padding: 17px;
+        }
+        .harding{
+            background: var(--soft-bg);
+            padding: 100px 48px;
+            border-radius: 0 0 80px 80px;
+        }
+        .harding h2{
+            font-size: 55px;
+            max-width: 600px;
+            line-height: 1.1;
+           
+            margin-left: 100px;
+        }
+        .harding p{
+            font-size: 16px;
+            max-width: 500px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            margin-left: 100px;
+        }
+        .sit{
+            height: 30px;
+            width: 80px;
+            background-color: rgb(144, 23, 44);
+            color: white;
+            border-radius: 10px;
+            border: none;
+             font-size: 15px;
+             
+             margin-top: 5px;
+        }
+        .sit:hover{
+            cursor: pointer;
+            /* background-color: rgb(205, 218, 218); */
+             /* cursor: pointer; */
+    background-color: rgb(205, 218, 218);
+    color:black;
+           
+        }
+        .kit{
+            height: 40px;
+            width: 100px;
+            border-radius: 50px;
+            background-color: rgb(185, 40, 64);
+            color: white;
+           
+            border: none;
+            margin-left: 100px;
+            margin-top: 5px;
+             font-size: 15px;
+        }
+        .kit:hover{
+            cursor: pointer;
+            /* background-color: rgb(205, 218, 218);} */
+            
+    background-color: rgb(205, 218, 218);
+    color:black;}
+           
+        
+        .section h3{
+            text-align: center;
+            
+            font-size: 50px;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+            gap: 30px;
+        }
+        .addCart{
+margin-top:10px;
+padding:8px 15px;
+border:none;
+background:#b92840;
+color:white;
+border-radius:10px;
+cursor:pointer;
+}
+
+.addCart:hover{
+background:#d9d9d9;
+color:black;
+}
+        
+.card{
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+        
+        .card img{
+            width: 200px;
+            height: 180px;
+            object-fit: contain;
+            margin-bottom: 16px;
+           
+            overflow: hidden;
+           
+        }
+        .card h4{
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .price{
+            color: #211a1a;
+            font-weight: 500;
+        }
+       @media(max-width:760px){
+    .navbar{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .right{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.right :hover{
+    cursor: pointer;
+    background-color: #fffcfc;
+    border-radius: 10px;
+}
+.shop {
+    position: relative;
+    list-style: none;
+}
+
+.dropdown{
+    position: absolute;
+    top: 70px;
+    right: -30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #b92840;
+    padding: 10px;
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+   
+}
+.shop:hover  .dropdown {
+    /* display: flex; */
+    opacity: 1;
+    visibility: visible;
+    transition: all .5s ease-in-out;
+    background-color: aquamarine;
+}
+.soot{  position: absolute;
+    top: 70px;
+    /* right: -30px; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #b92840;
+    padding: 10px;
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+    /* font-weight: 100; */
+    color: #b92840;
+
+}
+.hom:hover .soot{
+     opacity: 1;
+    visibility: visible;
+    transition: all .5s ease-in-out;
+    background-color: aqua;
+}
+
+    </style>
+    
+</head>
+ 
+<body>
+
+        <div class="navbar">
+        <div class="left">
+            <h1>Kamana Collection</h1>
+        </div>
+        <div class="right">
+            <li class="hom" style="list-style: none;">
+                
+            <a href="#">Home</a>
+            
+           <div class="soot">
+            <a href="">New product</a>
+            <a href="">Best offer</a>
+            <a href="">Discount</a>
+           </div> 
+            </li>
+<li class="shop">
+    <a  href="#"> Shop</a>
+        <div class="dropdown">
+                <a href="">Products</a>
+                <a href="">Ear-Ring</a>
+                <a href="">clips</a>
+            </div>
+</li>
+            
+           
+         
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+           
+              <!-- <input class="sit" type="button" value="Cart"> -->
+               <button class="sit" id="cartBtn">Cart (0)</button>
+        </div>
+   </div>
+   <div class="harding">
+    <h2>Handmade Earrings<br>& Woolen Hair Clips</h2>
+    <p>Explore our collection for stylish earring and hair accessories.</p>
+    <input class="kit" type="button" value="Shop Now">
+   </div>
+   <section class="section">
+   <h3>Best Seller</h3>
+   <div class="grid">
+    <div class="card">
+     <img src="./RING1.jpeg" alt="Gold Pearl Hoops">
+     <h4>Gold Pear Hoops</h4>
+     <p class="price">Rs.150</p>
+     <button class="addCart">Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="./CLIPS2.jpeg" alt="Crystal Drop Earrings">
+        <h4>Crystal Drop Earrings</h4>
+        <p class="price">Rs.149</p>
+        <button class="addCart">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.notonthehighstreet.com/system/product_images/images/001/960/567/original_heart-hoop-earrings.jpg" alt="Silver Heart Hoops">
+        <h4>Silver Heart Hoops</h4>
+        <p class="price">Rs.129</p>
+        <button class="addCart">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.fcglcdn.com/brainbees/images/products/583x720/18588724a.webp" alt="Floral Hair Clip">
+        <h4>Floral Hair Clip</h4>
+        <p class="price">Rs.99</p>
+        <button class="addCart">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.fcglcdn.com/brainbees/images/products/583x720/19654842a.webp" alt="Pearl Hair Clip">
+        <h4>Pearl Hair Clip</h4>
+        <p class="price">Rs.109</p>
+        <button class="addCart">Add to Cart</button>
+      </div>
+      
+
+    
+   </div>
+   </section>
+   <script>
+
+let cartCount = 0;
+
+const cartBtn = document.getElementById("cartBtn");
+const addButtons = document.querySelectorAll(".addCart");
+
+// Add item to cart
+addButtons.forEach(button => {
+    button.addEventListener("click", function(){
+
+        cartCount++;
+
+        cartBtn.innerText = "Cart (" + cartCount + ")";
+
+        alert("Item added to cart 🛒");
+
+    });
+});
+
+
+// Shop Now button scroll
+const shopBtn = document.querySelector(".kit");
+const section = document.querySelector(".section");
+
+shopBtn.addEventListener("click", function(){
+
+    section.scrollIntoView({
+        behavior: "smooth"
+    });
+
+});
+
+</script>
+    
+</body>
+</html> 

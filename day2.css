@@ -1,0 +1,14 @@
+#notification{
+    background-color: black;
+    border-left: 5px solid crimson;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+body{
+    background-color: aquamarine;
+}
+p{color: brown;
+font: size 16px;
+line-height: 1.6;
+}

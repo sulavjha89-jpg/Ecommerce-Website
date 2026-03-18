@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar 3</title>
+    <style>
+        .main-flex {
+            /* background-color: #310707; */
+            display: flex;
+            padding: 10px 20px;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(177, 233, 233);
+        }
+
+        .add-icone {
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            border-radius: 100%;
+            background: #f2f1f1;
+        }
+
+        .menu {
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .left-flex {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .nav-link {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-link a {
+            color: blue;
+            font-size: 20px;
+        }
+
+        .right-flex {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .icon {
+            font-size: 15px;
+            color: blue;
+            cursor: pointer;
+        }
+
+        .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .avatar img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 100%;
+            position: relative;
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="main-flex">
+        <!-- left side -->
+        <div class="left-flex">
+            <div class="add-icon">
+                <i data-lucide="menu"></i>
+            </div>
+            <div class="nav-link">
+                <a href="#">Home</a>
+                <a href="#">Product</a>
+                <a href="#">Pricing</a>
+            </div>
+        </div>
+        
+        <div class="right-flex">
+            <div class="message">
+                <i data-lucide="message-circle"></i>
+            </div>
+
+            <div class="bell">
+                <i data-lucide="bell"></i>
+            </div>
+            <div class="avatar">
+                <img
+                    src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEDaMEoX0Tkzqw74YSBab3HI2czZ14hUpGxq1Wuko5h6hGPVhF">
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

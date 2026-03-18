@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Navbar</title>
+  <style>
+    * {
+      margin: 5px;
+      padding: 10px;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #94bce4;
+    }
+
+    .navbar {
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 32px;
+      background: #c06565;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      font-size: 18px;
+      color: #1f2937;
+    }
+
+    .barcode {
+      width: 28px;
+      height: 28px;
+      background: #d6d8dc;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #374151;
+      font-size: 15px;
+    }
+
+    
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .icon {
+      font-size: 18px;
+      color: #6b7280;
+      cursor: pointer;
+    }
+
+    .avatar > img {
+         width: 50px;
+      height: 50px;
+      border-radius: 100%;
+
+        }
+    .purpose{ 
+        width: auto;
+        height: 1000px;
+        text-shadow: #c06565;
+        background-color: white;
+}
+.sec-flex{
+    display: flex;
+    background-color: #9aa8c2;
+}
+img{
+    width: 600px 600px;
+    height: 600px 600px;
+
+}
+.goods{
+    height: 300px;
+    width: 300pxs;
+}
+.purposr{
+    font-size: xx-large;
+    font-style: inherit;
+    color: #c06565;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="nav-left">
+        <div class="menu">
+            <i data-lucide="barcode"></i>  
+        </div>
+      <div class="logo">
+        <div class="barcode"></div>
+        Clever
+      </div>
+
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Product</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+      </div>
+    </div>
+
+    <div class="nav-right">
+      <span class="icon">💬</span>
+      <span class="icon">🔔</span>
+      <div class="avatar">
+               <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=1024x1024&w=is&k=20&c=NQtm4v1Uzp2luv-6f3qORcq9pDtz2H56p8g9Xix8cY0=">
+      </div>
+    </div>
+  </div>
+  <div class="sec-flex">
+  <div class="purpose">
+  <h1> The platform is for buying goods</h1>
+  </div>
+  <div class="goods">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDd5rwesqhC4Nfccxnns-9nfCSQVDFTxCqRbu4alqdTL9TjGGCbR83jM_xTEgG1eIjDhKtwbVkT4EJtLc0b4sd9DrFfXYUXzYsIkFrfkk&s=10">
+  
+  </div>
+
+</body>
+</html>

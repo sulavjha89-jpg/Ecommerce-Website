@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar5</title>
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    <style>
+        body{
+            background-color: rgb(232, 236, 236);
+        }
+        .main-flex{
+           display: flex;
+           box-shadow: 2px 2px 2px 0px #00000018;
+            padding: 10px 20px;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            border-radius: 10px;
+            position: relative;
+            
+        }
+        .left-flex{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        .icon{
+             width: 40px;
+
+            display: flex;
+            background-color: blue;
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            border-radius: 100%;
+             }
+        input::placeholder{
+            font-size: 15px;}
+        .centre{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        .right-flex{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .profile img{
+            height: 30px;
+            width: 30px;
+            border-radius: 100%;
+        } 
+        .input-wrapper{
+            width: 5cqb;
+            border-radius: 20px;
+            /* border: 1px solid red; */
+            width: 300px;
+            gap: 5px;
+            padding-right: 10px;
+            align-items: center;
+            border: 1px solid black;
+            display: flex;
+        }
+        input{
+            width: 100%;
+            background: #fff;
+            padding: 10px 10px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-right: 1px solid black;
+            outline: none;
+            border: none;
+
+        }
+        input::placeholder{
+            font-size: 15px;
+        }
+        
+        
+        .sidebar{
+            position: absolute;
+            width: 50vh;
+            background: #ffff;
+            padding: 10px;
+            height: 80vh;
+        }
+        .pip{
+            display:flex;
+            align-items: center;
+            gap: 15px;
+            padding: 10px;
+            cursor: pointer;
+            color: #050505;
+        }
+        .pip i{
+            font-size: 25px;
+            color: #1877f2;
+            width: 25px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .pip a{
+            font-size: 15px;
+            font-weight: 500;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        .pip img{
+            border-radius: 100%;
+            width: 25px;
+        }
+        .pip:hover{
+            background-color: rgb(214, 208, 202);
+            cursor: pointer;
+            border-radius: 10px;
+
+        }
+
+        
+         
+         
+             
+        
+    </style>
+</head>
+<body>
+
+    <div class="main-flex">
+        <div class="left-flex">
+            <div class="icon">
+               <i data-lucide="facebook"></i> 
+            </div>
+            <div class="input-wrapper">
+                <input placeholder="Search facebook">
+                <div class="come">
+                <i data-lucide="search"></i>
+                </div>  
+            </div>
+         </div>
+        <div class="centre">
+            <i data-lucide="house"></i>
+            <i data-lucide="film"></i> 
+            <i data-lucide="store"></i>  
+            <i data-lucide="users-round"></i> 
+            <i data-lucide="gamepad-2"></i>   
+        </div>
+        <div class="right-flex">
+            <i data-lucide="menu"></i>  
+            <i data-lucide="message-circle"></i>  
+            <i data-lucide="bell-ring"></i>
+            <div class="profile">
+                <img src="https://scontent.fbwa3-1.fna.fbcdn.net/v/t39.30808-1/557608654_1110945764488892_1693662641688520806_n.jpg?stp=cp0_dst-jpg_s40x40_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeEyfdZ8C1OQ3Vg3ele6dsodnllPfGB81v2eWU98YHzW_UXgL6iwlh4Bi6-xIwwBL68PpXqxSejn_8OjxagvYMu_&_nc_ohc=cFl2dsE98q8Q7kNvwGiyysn&_nc_oc=AdmRrAbqIIZA2dh5WajCetRS7w4Lw_6jwMv2BL9DuHF3Ya3It7wtXfwnjzAg_9wEKICr6AV26GgUC87VqjbKNLbO&_nc_zt=24&_nc_ht=scontent.fbwa3-1.fna&_nc_gid=Tt1jzsdgEvNZK0HgtjHz4g&oh=00_Afsji0z6mhxd96OE2cw_kw2vD78ovZWrxO4D38AbuyHY_w&oe=6988F536">
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+    <div class="pip">
+        <img src="https://scontent.fbwa3-1.fna.fbcdn.net/v/t39.30808-1/557608654_1110945764488892_1693662641688520806_n.jpg?stp=cp0_dst-jpg_s40x40_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeEyfdZ8C1OQ3Vg3ele6dsodnllPfGB81v2eWU98YHzW_UXgL6iwlh4Bi6-xIwwBL68PpXqxSejn_8OjxagvYMu_&_nc_ohc=cFl2dsE98q8Q7kNvwGiyysn&_nc_oc=AdmRrAbqIIZA2dh5WajCetRS7w4Lw_6jwMv2BL9DuHF3Ya3It7wtXfwnjzAg_9wEKICr6AV26GgUC87VqjbKNLbO&_nc_zt=24&_nc_ht=scontent.fbwa3-1.fna&_nc_gid=Tt1jzsdgEvNZK0HgtjHz4g&oh=00_Afsji0z6mhxd96OE2cw_kw2vD78ovZWrxO4D38AbuyHY_w&oe=6988F536">
+        <a href="#">Sulav Jha</a>
+    </div>
+    <div class="pip">
+        <i data-lucide="circle"></i> 
+        <a href="#">Meta AI</a>
+    </div>
+    <div class="pip">
+<i data-lucide="users"></i> 
+<a href="#">Friends</a>
+    </div>
+    <div class="pip">
+<i data-lucide="clock-fading"></i>  
+<a href="#">Memories</a>
+    </div>
+    <div class="pip">
+        <i data-lucide="bookmark"></i> 
+        <a href="#">Saved</a>
+    </div>
+    <div class="pip">
+        <i data-lucide="boxes"></i>
+        <a href="#">Group</a>
+    </div>
+    <div class="pip">
+        <i data-lucide="film"></i> 
+        <a href="#">Reels</a>
+        </div>
+        <div class="pip">
+<i data-lucide="store"></i>  
+            <a href="#">Marketplace</a>
+        </div>
+        
+    </div>
+</div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar 7</title>
+    <style>
+        .main-flex {
+            display: flex;
+            padding: 10px 20px;
+            justify-content: space-between;
+            align-items: center;
+            background: #dccece;
+            border-radius: 10px;
+        }
+
+        .left-flex {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        .input-wrapper {
+            width: 5cqb;
+            border-radius: 20px;
+            width: 300px;
+            gap: 5px;
+            padding-right: 10px;
+            align-items: center;
+            border: 1px solid rgb(243, 232, 232);
+            display: flex;
+        }
+
+        input {
+            width: 100%;
+            background: #fffcfc;
+            padding: 10px 10px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-right: 1px solid black;
+            outline: none;
+            border: none;
+        }
+
+        input::placeholder {
+            font-size: 15px;
+        }
+
+        .right-flex {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            
+        }
+        .right-flex :hover{
+             background-color: #c4a7a7;
+            transition: background 500ms;
+            cursor: pointer;
+            border-radius: 100%;
+           
+        
+        }
+        .svatar img{
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+        }
+        
+        .left-flex :hover{
+             background-color: #c0b7b7;
+            transition: background 500ms;
+            cursor: pointer;
+            border-radius: 100%;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="main-flex">
+        <div class="left-flex">
+            <div class="avatar">
+                <img src="https://www.google.com/logos/doodles/2026/curling-2026-day-2-6753651837111034.3-s.png">
+            </div>
+        </div>
+        <!--centre-->
+        <div class="input-wrapper">
+            <input placeholder="Search">
+            <div class="mic">
+                <i data-lucide="mic"></i>
+            </div>
+            <div class="come">
+                <i data-lucide="camera"></i>
+            </div>
+            <div class="seen">
+                <i data-lucide="search"></i>
+            </div>
+        </div>
+
+        <div class="right-flex">
+            <i data-lucide="flask-conical"></i>
+            <i data-lucide="layout-grid"></i>
+            <div class="svatar">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk-25SAdqdNdQbkIwNtrMQIAfiqqsQd0ffow&s">
+            </div>
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
